@@ -9,6 +9,7 @@ const functionSubmit = (event) => {
 
     if (!email || !password) {
         alert(`Form elemanları doldurulmalıdır !`);
+        return; // eğer boşsa işlemi durdur.
     }
 
     const data = {
